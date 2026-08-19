@@ -1,0 +1,84 @@
+╔════════════════════════════════════╗
+║            𝑹𝒊𝒎𝒖𝒓𝒖 𝑻𝒆𝒎𝒑𝒆𝒔𝒕                                                             ║
+╚════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━
+📌 INFORMASI SCRIPT
+━━━━━━━━━━━━━━━━━━
+🤖 Bot Name   : Rimuru MD
+⚡ Version    : 4.0
+👑 Developer  : Anita Putri Azzahra
+🛠️ Base Type  : Multi Device
+📦 Type Script: Private
+
+━━━━━━━━━━━━━━━━━━
+ig: @anitaputriazzahra
+━━━━━━━━━━━━━━━━━━
+📢 WARNING
+━━━━━━━━━━━━━━━━━━
+⚠️ Jangan hapus credits developer
+⚠️ Jangan perjualbelikan SC tanpa izin
+⚠️ Rename seperlunya aja 
+⚠️ Jika ada error fix sendiri dulu 
+⚠️ Dilarang claim hasil recode full
+
+━━━━━━━━━━━━━━━━━━
+🛠️ CARA RENAME BOT
+━━━━━━━━━━━━━━━━━━
+1. Buka file config.js
+2. Cari bagian berikut:
+
+bot: {
+   name: '𝑹𝒊𝒎𝒖𝒓𝒖 𝑻𝒆𝒎𝒑𝒆𝒔𝒕'
+}
+
+3. Ganti sesuai nama bot kalian ✨
+
+━━━━━━━━━━━━━━━━━━
+👑 DEVELOPER Rimuru MD
+━━━━━━━━━━━━━━━━━━
+💻 Di Kembangkan Oleh :
+👑FallZx
+💻 Di Rename Oleh :
+Anita Putri Azzahra
+
+📱 WhatsApp Developer :
+
+(Ga punya nomor FallZx)
+
+6282191035625
+
+━━━━━━━━━━━━━━━━━━
+📜 PEMILIK  ASLI SC
+━━━━━━━━━━━━━━━━━━
+👑 FallZx
+━━━━━━━━━━━━━━━━━━
+📜 YANG RANAME
+━━━━━━━━━━━━━━━━━━
+👑 𝑨𝒏𝒊𝒕𝒂 𝑷𝒖𝒕𝒓𝒊 𝑨𝒛𝒛𝒂𝒉𝒓𝒂
+━━━━━━━━━━━━━━━━━━
+Website
+━━━━━━━━━━━━━━━━━━
+https://anita-store.netlify.app/
+━━━━━━━━━━━━━━━━━━
+💖 THANKS TO
+━━━━━━━━━━━━━━━━━━
+💖 Allah SWT
+💖 Orang Tua
+💖 Semua User
+💖 Semua Member Support
+
+━━━━━━━━━━━━━━━━━━
+📝 NOTES
+━━━━━━━━━━━━━━━━━━
+• Script ini dibuat untuk belajar
+• Jangan abuse fitur bot
+• Gunakan dengan bijak
+• Jangan spam bot owner 😭 
+━━━━━━━━━━━━━━━━━━
+NOTE: ini script hasil rename and menambah fitur fitur baru sama 
+mengubah dan fix fitur dari script ourin meskipun terdengar seperti mencolong 
+tapi ,yang namanya gabut gimana lagi 🗿 
+
+
+© 𝑨𝒏𝒊𝒕𝒂 𝑷𝒖𝒕𝒓𝒊 𝑨𝒛𝒛𝒂𝒉𝒓𝒂 - 2026-2027

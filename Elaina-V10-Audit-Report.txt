@@ -1,0 +1,39 @@
+ELAINA V10 -> RIMURU-MD AUDIT REPORT
+====================================
+
+Base:
+- Rimuru-MD-FURINA-INTEGRATED.zip
+
+Method:
+- Membandingkan command/case Elaina dengan plugin Rimuru berdasarkan command DAN isi/fungsi.
+- Command yang hanya berbeda nama tetapi menjalankan fungsi yang sama tidak dianggap fitur baru.
+- Versi bawaan Rimuru diprioritaskan.
+- Varian/fallback seperti hd/hd2/hd3 dan pola fitur2/fitur3 tidak dianggap duplikat.
+- Kode CommonJS Elaina tidak ditempel mentah ke Rimuru.
+
+Hasil aman yang benar-benar berdiri sendiri dan ditambahkan:
+1. plugins/tools/binary.js
+   - .biner, .texttobin, .teks2bin, .encodebiner
+   - encode teks -> binary
+2. plugins/tools/debiner.js
+   - .debiner, .bintotext, .bin2teks, .decodebiner
+   - decode binary -> teks
+3. plugins/group/listmember.js
+   - .listmember, .memberlist, .daftarmember, .listanggota
+   - daftar seluruh anggota grup + role + mentions
+4. plugins/group/groupstats.js
+   - .groupstats, .statsgrup, .statsgroup
+   - statistik dasar grup saat ini (total member/admin/owner)
+5. plugins/main/usercard.js
+   - .usercard, .kartu, .mycard
+   - kartu profil berbasis database Rimuru (nama, nomor, level, EXP, energi, premium)
+
+TOTAL DITAMBAHKAN: 5 fitur utama (18 alias command).
+
+Catatan:
+- Beberapa command Elaina terlihat baru jika hanya dibandingkan nama command, tetapi setelah isi/fungsi diperiksa ternyata merupakan alternatif/duplikat dari sistem Rimuru, sehingga tidak ditambahkan.
+- Banyak command Elaina adalah sistem keamanan/monitoring internal yang bergantung pada middleware dan library Elaina (`_SEC`, PMGuard, forensic logger, queue, registration module, dll.). Menyalinnya sebagai plugin akan menghasilkan fungsi setengah jadi atau error di Rimuru, jadi tidak ditempel mentah.
+- Beberapa downloader/scraper Elaina menggunakan endpoint/API pihak ketiga yang sudah tua atau hard-coded cookie/token. Tidak dimasukkan hanya demi menambah jumlah fitur.
+- Fitur yang berpotensi menjadi fitur pemalsuan identitas/dokumen atau komunikasi yang menyesatkan tidak diintegrasikan sebagai fitur bot.
+- Tidak ada fitur Rimuru bawaan yang ditimpa oleh 5 plugin ini.
+- Semua 5 file baru lulus `node --check`.

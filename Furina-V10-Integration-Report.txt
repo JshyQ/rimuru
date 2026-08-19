@@ -1,0 +1,77 @@
+RIMURU-MD — FURINA V10 INTEGRATION REPORT
+=============================================
+
+Basis:
+- Rimuru-MD was treated as the primary/base codebase.
+- Existing Rimuru features were NOT replaced by Furina versions when the same function already existed.
+- Feature comparison was based on command behavior/function and code, not filename alone.
+- Variant/fallback commands such as hd/hd2/hd3 and fitur/fitur2/fitur3 were left alone.
+
+FEATURES ADDED
+--------------
+
+1. .mcstatus / .mcstat
+   Function:
+   - Checks Minecraft Java server status.
+   - Shows online/offline status, version, player count, port, MOTD and some online players.
+   Rimuru location:
+   - plugins/general/mcstatus.js
+
+2. .mcaddons / .mcmap
+   Function:
+   - .mcaddons: lists recent Minecraft Bedrock add-ons from BedrockExplorer.
+   - .mcmap: lists recent free Minecraft Bedrock maps.
+   Rimuru location:
+   - plugins/general/mcaddons.js
+
+3. .resizevideo / .resizevid
+   Function:
+   - Reply to a video and inspect its original resolution.
+   - Resize while preserving aspect ratio.
+   - Supports common target widths: 360, 480, 640, 720 and 1080.
+   - Uses Rimuru-compatible FFmpeg dependencies.
+   Rimuru location:
+   - plugins/tools/resizevideo.js
+
+4. .speedbot / .speed-bot / .serverinfo
+   Function:
+   - Shows bot/server performance information.
+   - Ping, uptime, OS, CPU/core count, load average, RAM and disk usage when available.
+   - Reimplemented for Rimuru instead of copying Furina's references to helpers that do not exist in Rimuru.
+   Rimuru location:
+   - plugins/tools/speedbot.js
+
+5. .referal / .referral / .refer / .ref
+   Function:
+   - Generates a personal referral code/link.
+   - Another user can redeem the code once.
+   - Gives EXP to the new user and the referral owner.
+   - Tracks referral count and bonus milestones.
+   - Uses Rimuru's rimuru-database.js instead of Furina's global.db.
+   Rimuru location:
+   - plugins/user/referal.js
+
+IMPORTANT EXCLUSIONS
+--------------------
+
+- Existing Rimuru features were not replaced by Furina copies.
+- Features whose function already exists in Rimuru were not duplicated just because Furina used a different command name.
+  Examples found during review include:
+  - remove background -> Rimuru already has removebg
+  - photo-to-anime -> Rimuru already has toanime
+  - YouTube stalking -> Rimuru already has ytstalk
+  - CapCut download -> Rimuru already has capcut/capcutdl
+  - total message counting -> Rimuru already has totalpesan
+  - RPG economy features such as berdagang, bankcek, pasar, bansos -> already present
+  - ephoto effects -> already covered by Rimuru's ephoto system
+- Features containing hardcoded third-party bot/API credentials were not copied.
+- WhatsApp-number enumeration/search functionality was not added because it can be used to enumerate account presence.
+- Adult/NSFW functionality was not migrated.
+
+VALIDATION
+----------
+
+- All JavaScript files in the resulting Rimuru tree passed `node --check`.
+- The five new plugin command sets were checked against existing plugin configs and do not introduce a duplicate command name/alias.
+- The new plugins use Rimuru's ESM/pluginConfig/handler architecture.
+- The original Rimuru implementation remains the priority when a Furina feature overlaps with it.
